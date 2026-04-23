@@ -16,21 +16,41 @@ body {
     #020617;
 }
 
-/* Biar ga nempel ke pinggir */
+/* SECTION */
 .section {
   padding: 40px 20px;
   text-align: center;
 }
 
-/* Gambar biar ga kegedean */
-img {
-  max-width: 150px;
-  border-radius: 10px;
+/* GRID 2 KOLOM */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
-/* Gallery */
+/* CARD */
+.card {
+  text-align: center;
+}
+
+/* FOTO */
+.card img {
+  width: 100%;
+  max-width: 120px;
+  border-radius: 50%;
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
 .gallery img {
-  max-width: 200px;
+  width: 100%;
+  border-radius: 10px;
 }
 </style>
 
@@ -38,7 +58,7 @@ img {
 <body>
 
 <div class="section">
-  <img src="https://i.imgur.com/REPLACE.jpg">
+  <img src="https://i.imgur.com/REPLACE.jpg" style="max-width:150px;border-radius:50%;">
   <h1>KELAS VIA</h1>
   <p>Solid, Kompak, Penuh Kenangan 💙</p>
 </div>
@@ -50,40 +70,133 @@ img {
 
 <div class="section">
   <h2>Struktur Kelas</h2>
-  <p>M.Kinan Aftadithya Naufaldy</p>
-  <p>Muhammad Noval</p>
+  <div class="grid">
+    <div class="card">
+      <img src="https://i.imgur.com/REPLACE.jpg">
+      <p>M.Kinan Aftadithya Naufaldy</p>
+    </div>
+    <div class="card">
+      <img src="https://i.imgur.com/REPLACE.jpg">
+      <p>Muhammad Noval</p>
+    </div>
+  </div>
 </div>
 
 <div class="section">
   <h2>Anggota</h2>
+  <div class="grid">
 
-  <img src="https://i.imgur.com/zQOGnQ3.jpg"><p>Ahmad Hafi Badali</p>
-  <img src="https://i.imgur.com/WHoawyS.jpg"><p>Alqaqa Ibn Amr</p>
-  <img src="https://i.imgur.com/JMWgIYs.jpg"><p>Almira Shidqiya</p>
-  <img src="https://i.imgur.com/DiFPYxP.jpg"><p>Azka Ihsana Nurfattah</p>
-  <img src="https://i.imgur.com/JiOTwYz.jpg"><p>Chelsea Putri Agustina</p>
-  <img src="https://i.imgur.com/p2oU4EV.jpg"><p>Defandra Athiyya Rizki</p>
-  <img src="https://i.imgur.com/AnCXQfR.jpg"><p>Hayfa Nayla Fitria</p>
-  <img src="https://i.imgur.com/h4TQGGH.jpg"><p>Lakeisha Azzalea Akbar</p>
-  <img src="https://i.imgur.com/iIZRjwG.jpg"><p>Muhammad Abidzar</p>
-  <img src="https://i.imgur.com/NJonxVP.jpg"><p>Muhammad Abiena Amri</p>
-  <img src="https://i.imgur.com/SDygFKk.jpg"><p>Muhammad Hafiy</p>
-  <img src="https://i.imgur.com/p7KQzQH.jpg"><p>Muhammad Luthfi Hadi</p>
-  <img src="https://i.imgur.com/I2Fj5x2.jpg"><p>Muhammad Nizar Munawwar</p>
-  <img src="https://i.imgur.com/mxf7MpL.jpg"><p>Muhammad Tsaqif Nur Rayyan</p>
-  <img src="https://i.imgur.com/aRoMEmO.jpg"><p>Nabila El Anabel</p>
-  <img src="https://i.imgur.com/3IYFQl5.jpg"><p>Nadia Zalfa Aridha</p>
-  <img src="https://i.imgur.com/tcxxJBu.jpg"><p>Rafael Carolius Sembiring</p>
-  <img src="https://i.imgur.com/iHEPKN8.jpg"><p>Riska Irliani</p>
-  <img src="https://i.imgur.com/EwxoEic.jpg"><p>Tiara Ramadhania</p>
-  <img src="https://i.imgur.com/taGoUBE.jpg"><p>Zara Sherin Chrestianto</p>
+    <div class="card">
+      <img src="https://i.imgur.com/zQOGnQ3.jpg">
+      <p>Ahmad Hafi Badali</p>
+    </div>
 
+    <div class="card">
+      <img src="https://i.imgur.com/WHoawyS.jpg">
+      <p>Alqaqa Ibn Amr</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.imgur.com/JMWgIYs.jpg">
+      <p>Almira Shidqiya</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.imgur.com/DiFPYxP.jpg">
+      <p>Azka Ihsana Nurfattah</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.imgur.com/JiOTwYz.jpg">
+      <p>Chelsea Putri Agustina</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.imgur.com/p2oU4EV.jpg">
+      <p>Defandra Athiyya Rizki</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.imgur.com/AnCXQfR.jpg">
+      <p>Hayfa Nayla Fitria</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.imgur.com/h4TQGGH.jpg">
+      <p>Lakeisha Azzalea Akbar</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.imgur.com/iIZRjwG.jpg">
+      <p>Muhammad Abidzar</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.imgur.com/NJonxVP.jpg">
+      <p>Muhammad Abiena Amri</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.imgur.com/SDygFKk.jpg">
+      <p>Muhammad Hafiy</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.imgur.com/p7KQzQH.jpg">
+      <p>Muhammad Luthfi Hadi</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.imgur.com/I2Fj5x2.jpg">
+      <p>Muhammad Nizar Munawwar</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.imgur.com/mxf7MpL.jpg">
+      <p>Muhammad Tsaqif Nur Rayyan</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.imgur.com/aRoMEmO.jpg">
+      <p>Nabila El Anabel</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.imgur.com/3IYFQl5.jpg">
+      <p>Nadia Zalfa Aridha</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.imgur.com/tcxxJBu.jpg">
+      <p>Rafael Carolius Sembiring</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.imgur.com/iHEPKN8.jpg">
+      <p>Riska Irliani</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.imgur.com/EwxoEic.jpg">
+      <p>Tiara Ramadhania</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.imgur.com/taGoUBE.jpg">
+      <p>Zara Sherin Chrestianto</p>
+    </div>
+
+  </div>
 </div>
 
 <div class="section">
   <h2>Prestasi</h2>
-  <img src="https://i.imgur.com/OdZxqsz.jpg">
-  <p>Juara Harapan 1 Physton 🥇</p>
+  <div class="grid">
+    <div class="card">
+      <img src="https://i.imgur.com/OdZxqsz.jpg">
+      <p>Juara Harapan 1 Physton 🥇</p>
+    </div>
+  </div>
 </div>
 
 <div class="section">
